@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Received Data</title>
+    <style>
+        body {
+            background: #121212;
+            color: white;
+            font-family: Arial;
+            padding: 30px;
+        }
+        .box {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📩 تم استلام معلومات تسجيل الدخول</h1>
+
+<div class="box">
+    <p><strong>اسم المستخدم:</strong> 
+        <script>
+            document.write(new URLSearchParams(window.location.search).get("username"));
+        </script>
+    </p>
+
+    <p><strong>كلمة المرور:</strong> 
+        <script>
+            document.write(new URLSearchParams(window.location.search).get("password"));
+        </script>
+    </p>
+</div>
+
+</body>
+</html>
